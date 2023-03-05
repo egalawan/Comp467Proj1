@@ -5,7 +5,7 @@ import sys
 
 with open('Baselight_export.txt', 'r') as file:
     for row in file:
-        print(row)
+        print(row) 
 
 
 #Import xytech work order (Xytech.txt)

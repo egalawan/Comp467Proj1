@@ -16,6 +16,7 @@ Project 1: import/export script
 -Script will parse data
 -Computation done to match shareholder request, to replace file system from local baselight to facility 
 storage (remember color correcter's prefer local storage for bandwidth issues)
+Need to make a CSV file with these indicators
 -Export CSV file ('/' indicates columns):
 -Line 1: Producer / Operator / job /notes
 -Line 4: show location / frames to fix

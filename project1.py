@@ -129,10 +129,10 @@ if start_Process == True:
             #print(order)
             #iterate through the Locations list
             for location in Locations:
-               print("----")
-               print(order)
-               print(location[0])
-               print("----")
+            #    print("----")
+            #    print(order)
+            #    print(location[0])
+            #    print("----")
                if order in location[0]:
                    found = True
                    all_locations = location[1:]
@@ -188,15 +188,15 @@ for loc in work_Locations[0]:
             Final_Order[loc] = value
             del Final_Order[key]
             break
-    #print(f"{loc}: {', '.join(value)}")
+    print(f"{loc}: {', '.join(value)}")
 
 
-# with open("Project1.csv", "w", newline="") as csvfile:
-#     fields = ["Producer: ", "Operator: ", "Job: ", "Notes: "]
-#     writer = csv.DictWriter(csvfile, fieldnames=fields)
-#     writer.writeheader()
-#     writer.writerow({"Producer: ": work_Producer, "Operator: ": work_Operator, "Job: ": work_Job_Description, "Notes: ": work_Notes})
-#     Write = csv.writer(csvfile)
-#     Write.writerow(["File", "Data"])
-#     for key, value in Final_Order.items():
-#         Write.writerow([key, value])
+with open("Project1.csv", "w", newline="") as csvfile:
+    fields = ["Producer: ", "Operator: ", "Job: ", "Notes: "]
+    writer = csv.DictWriter(csvfile, fieldnames=fields)
+    writer.writeheader()
+    writer.writerow({"Producer: ": work_Producer, "Operator: ": work_Operator, "Job: ": work_Job_Description, "Notes: ": work_Notes})
+    Write = csv.writer(csvfile)
+    Write.writerow(["File", "Data"])
+    for key, value in Final_Order.items():
+        Write.writerow([key, value])
